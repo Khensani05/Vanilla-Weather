@@ -71,6 +71,16 @@ button {
   font-weight: bold;
   text-shadow: 1px 1px 5px #082567;
 }
+
+#current-weather {
+  font-size: 20px;
+  text-shadow: 1px 1px 5px #082567;
+  color: black;
+}
+
+.measure {
+  color: #fa8072;
+}
 /*
 .temp-icon {
   display: flex;

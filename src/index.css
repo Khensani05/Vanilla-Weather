@@ -1,0 +1,13 @@
+body {
+  background: linear-gradient(to right, #082567, #fa8072);
+  font-family: "Quicksand", sans-serif;
+}
+
+.everything {
+  background-color: #e7d7e0;
+  max-width: 500px;
+  margin: 100px auto;
+  padding: 50px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 20px #e7d7e0;
+}

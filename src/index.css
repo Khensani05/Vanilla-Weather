@@ -64,6 +64,13 @@ button {
 #weather-Icon {
   size: 40px;
 }
+
+.weather_temp {
+  font-size: 50px;
+  color: #fa8072;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px #082567;
+}
 /*
 .temp-icon {
   display: flex;

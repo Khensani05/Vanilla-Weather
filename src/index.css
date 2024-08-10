@@ -54,14 +54,14 @@ button {
   border-radius: 6px;
 }
 
-.weather-Temp {
+#weather-Temp {
   font-size: 50px;
   color: #fa8072;
   font-weight: bold;
   text-shadow: 1px 1px 5px #082567;
 }
 
-.weather-Icon {
+#weather-Icon {
   size: 40px;
 }
 /*

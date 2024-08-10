@@ -3,43 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/index.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <title>Vanilla Weather Application</title>
   </head>
   <body>
     <section class="everything">
-    <form id="searchAnywhere">
-      <input type="text" placeholder="Search for a city" id="enter-City" required />
-      <input type="submit" value="Search" id="search-Button" />
-    </form>
+      <form id="searchAnywhere">
+        <input
+          type="text"
+          placeholder="Search for a city"
+          id="enter-City"
+          required
+        />
+        <input type="submit" value="Search" id="search-Button" />
+      </form>
+
       <br />
 
       <section id="current-weather">
-
         <br />
         <button id="show-City">Johannesburg</button>
         <br />
-        <p>
-            <div class="weather-Temp">15&deg;</div>
-            <div class="weather-Icon">🌧</div>
-        </p>
-        <p id="weather-description">
+        <div class="temp-icon">
+          <div class="weather-Temp">15&deg;</div>
+          <div class="weather-Icon">🌧</div>
+        </div>
+        <div id="weather-description">
           It is <span class="date">day and time</span>
-          <br />
-          <hr/>
-          <div id="type">Thunderstorm</div> 
-          <div id="humidity">Humidity: %,</div>
-          <div id="speed"> Wind Speed</div>
-          
-        </p>
+          <div id="type">Thunderstorm</div>
+          <div id="humidity">Humidity: %</div>
+          <div id="speed">Wind Speed</div>
+        </div>
       </section>
-      <br/>
+
+      <br />
+      <hr />
+
       <footer>
-        This project was coded by <a href="#" target="_blank">Nkhensani Notigo,</a>is 
-        <a href="#" >is open-sourced on GitHub</a> and 
+        This project was coded by
+        <a href="#" target="_blank">Nkhensani Notigo,</a>is
+        <a href="#">is open-sourced on GitHub</a> and
         <a href="#">hosted by Netlify</a>
       </footer>
     </section>

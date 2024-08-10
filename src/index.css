@@ -11,3 +11,61 @@ body {
   border-radius: 30px;
   box-shadow: 2px 2px 20px #e7d7e0;
 }
+
+#enter-City {
+  background-color: white;
+  padding: 10px;
+  color: #fa8072;
+  font-size: medium;
+  border-radius: 5px;
+  width: 70%;
+  border: none;
+}
+
+#search-Button {
+  background-color: #fa8072;
+  font-size: medium;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 2px 2px whitesmoke;
+  color: whitesmoke;
+  margin-left: 5px;
+}
+
+footer {
+  text-align: center;
+  font-size: small;
+}
+
+a {
+  color: #fa8072;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  border: none;
+  background-image: url("https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2l0eXxlbnwwfHwwfHx8MA%3D%3D");
+  font-size: large;
+  color: #fa8072;
+  box-shadow: 1px 1px 5px white;
+  border-radius: 6px;
+}
+
+.weather-Temp {
+  font-size: 50px;
+  color: #fa8072;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px #082567;
+}
+
+.weather-Icon {
+  size: 40px;
+}
+/*
+.temp-icon {
+  display: flex;
+  justify-content: space-between;
+}*/

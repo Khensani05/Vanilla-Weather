@@ -23,12 +23,12 @@ function updateWeatherData(response) {
   //display the time
   let date = new Date(response.data.time * 1000);
   let timeElement = document.querySelector("#date");
-
-  let day = date.getDay();
-  let hours = date.getHours();
-  let minutes = date.getMinutes();
-
   timeElement.innerHTML = formatDate(date);
+
+  //display weather icon
+  let iconElement = document.querySelector("#icon");
+
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" id="weather-Icon" />`;
 }
 
 function formatDate(date) {
@@ -45,7 +45,7 @@ function formatDate(date) {
   ];
   let day = days[date.getDay()];
   if (minutes < 10) {
-    minutes`0${minutes}`;
+    minutes = `0${minutes}`;
   }
   return `${day} ${hours}:${minutes}`;
 }

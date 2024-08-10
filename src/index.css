@@ -55,7 +55,7 @@ button {
 }
 
 #weather-Temp {
-  font-size: 50px;
+  font-size: 70px;
   color: #fa8072;
   font-weight: bold;
   text-shadow: 1px 1px 5px #082567;
@@ -66,7 +66,7 @@ button {
 }
 
 .weather_temp {
-  font-size: 50px;
+  font-size: 65px;
   color: #fa8072;
   font-weight: bold;
   text-shadow: 1px 1px 5px #082567;

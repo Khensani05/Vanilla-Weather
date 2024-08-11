@@ -5,7 +5,7 @@ body {
 
 .everything {
   background-color: #e7d7e0;
-  max-width: 500px;
+  max-width: 600px;
   margin: 100px auto;
   padding: 50px;
   border-radius: 30px;
@@ -18,7 +18,7 @@ body {
   color: #fa8072;
   font-size: medium;
   border-radius: 5px;
-  width: 70%;
+  width: 80%;
   border: none;
 }
 
@@ -81,8 +81,47 @@ button {
 .measure {
   color: #fa8072;
 }
-/*
+
+.weather-forecastDay {
+  text-align: center;
+  color: #fa8072;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.weather-forecastIcon {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.weather-forecastTemp {
+  text-align: center;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.weather-forecast {
+  display: flex;
+  align-items: flex-start;
+  padding: 15px;
+  gap: 10px;
+}
+
+.weather-forecastItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .temp-icon {
   display: flex;
-  justify-content: space-between;
-}*/
+  flex-direction: column;
+  align-items: center;
+}
+
+.forecast-items {
+  display: flex;
+  gap: 15px;
+}

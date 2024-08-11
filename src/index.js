@@ -29,6 +29,8 @@ function updateWeatherData(response) {
   let iconElement = document.querySelector("#icon");
 
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" id="weather-Icon" />`;
+
+  getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -68,38 +70,45 @@ function changeCityName(event) {
 let searchElement = document.querySelector("#searchAnywhere");
 searchElement.addEventListener("submit", changeCityName);
 
-searchCity("Johannesburg");
-
 //displaying forecast
 
-function displayForecast() {
+function getForecast(city) {
+  let apiKey = "b03c74bff4oa46bc3d3tee6230146d23";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=b03c74bff4oa46bc3d3tee6230146d23&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
+  console.log(response.data);
+
   let forecastElement = document.querySelector("#forecast");
+  let forecastData = response.data.daily;
 
   let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
-  let forecastHtml = "";
+
+  let forecastHtml = `<div class="forecast-container">
+                        <div class="temp-icon">
+                          <div id="icon"></div>
+                        </div>`;
+
+  forecastHtml += `<div class="forecast-items">`;
 
   days.forEach(function (day) {
-    forecastHtml =
-      forecastHtml +
-      ` 
-<div class="temp-icon">
-            <div id="icon"></div>
+    forecastHtml += `
+      <div class="weather-forecastItem">
+        <div class="weather-forecastDay">${day}</div>
+        <div class="weather-forecastIcon">🌥</div>
+        <div class="weather-forecastTemps">
+          <div class="weather-forecastTemp">
+            <strong>14&deg;C</strong> 6&deg;C
           </div>
-        
-<div class="forecast-items">    
-            <div class="weather-forecastItem">
-              <div class="weather-forecastDay">${day}</div>
-              <div class="weather-forecastIcon">🌥</div>
-              <div class="weather-forecastTemps">
-                <div class="weather-forecastTemp">
-                  <strong>14&deg;C</strong> 6&deg;C
-                </div>
-              </div>
-            </div>
-`;
+        </div>
+      </div>`;
   });
+
+  forecastHtml += `</div></div>`;
 
   forecastElement.innerHTML = forecastHtml;
 }
 
-displayForecast();
+searchCity("Johannesburg");
